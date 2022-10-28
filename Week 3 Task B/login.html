@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <p>Welcome Back!</p>
+    <form action='success.html'>
+      <fieldset>
+        <label for="email">Email Address <input id="email" name="email" type="email" minlength="3" required placeholder="Enter your email"/></label>
+        <label for="password">Enter Your Password: <input id="password" name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must have at least one number and one lowercase and uppercase letter, and at least 8 characters" required /></label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Don't have an account? <a href="register.html">Join now</a></p>    <p></p>
+    <p></p>
+  </body>
+</html>

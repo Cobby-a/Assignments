@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, #4e65ff, #0093ff, #00b7ff, #20d5ff, #92effd);
+    /* background-color: #1b1b32; */
+    color: #f5f6f7;
+    font-family: 'Poppins', Tahoma;
+    font-size: 16px;
+  }
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 70vw;
+    max-width: 500px;
+    min-width: 300px;
+    color: #000000;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+  }
+  
+  fieldset {
+    margin-left: 2em;
+    margin-right: 1em;
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 1rem 0;
+  }
+  
+  input,
+  select {
+    margin: 10px 0 0 0;
+    width: 90%;
+    min-height: 2.5em;
+    border-radius: 3px;
+  }
+  
+  input{
+    color: #000000;
+    font-size: 16px;
+    outline: none;
+    line-height: 1;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 22%;
+    margin: 1em auto;
+    height: 2em;
+    font-weight: 40px;
+    border-radius: 3px;
+    background-color: #D1FF19;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    box-shadow: 0 0 20px 0 #ffffff;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover{
+    background-color: #FFFF55;
+  }
+  p:last-of-type{
+    visibility: hidden;
+  }
+  a{
+    color: #D1FF19;
+    text-decoration: none;
+  }

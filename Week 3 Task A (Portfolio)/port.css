@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+:root {
+    --main-white: #f0f0f0;
+    --main-yellow: #D4D400;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+  *{
+    margin: 0;
+    padding: 0; 
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  html {
+      box-sizing: border-box;
+  font-size: 62.5%;  scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    color:var(--main-white);
+    font-size: 1.8rem;
+    line-height:1.4;
+    font-weight: 300;
+  }
+
+  
+  h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    max-width: 640px;
+  }
+  h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+  nav{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    background: var(--main-yellow);
+    position:fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  .navlists{
+    display: flex;
+    margin-right: 2rem;
+  }
+  @media (max-width: 28.75em) {
+  nav{  justify-content: center;
+    }
+  .navlists {
+      margin: 0 1rem;
+    }
+  }
+  .navlists a{
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  .navlists a:hover{
+    background: var(--main-blue)
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+  text-decoration: none;
+  color: var(--main-gray);
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+  #emma{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    /* transition: transform 20s ease-out; */
+
+  }
+  .about{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;background-color: #000;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+  .about > p {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    color: var(--main-yellow);
+    text-align: center;
+  }
+  .projects{
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-blue)
+  }
+
+  .projects h1 {
+    max-width: 500px;
+    margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+  }
+  .project-grid{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap : 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .project{
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+  .code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+  }
+  .project:hover .code {
+    color: #ff7f50;
+  }
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  .project-title {
+    color:var(--main-white);
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+  }
+  .service{
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-yellow)
+  }
+  .service h1 {
+    max-width: 500px;
+    margin: 0 auto 6rem auto;
+    color: var(--main-gray)
+  }
+  .services{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap : 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .services h2{
+    border-bottom: 0.2rem solid var(--main-yellow);
+  }
+  .services1{
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+  .services1 p {
+    color:var(--main-white);
+    font-size: 2rem;
+    padding: 3rem 3rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    /* border-radius: 2px; */
+  }
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+  }
+  
+ 
+  
+  @media (max-width: 28.75em) {
+    .contacts-head > h2 {
+      font-size: 4rem;
+    }
+  }
+  
+  .contacts-head > p {
+    font-style: italic;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    color: var(--main-white);
+    margin-top: 2rem;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+  footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-yellow);
+  }
+  
+  footer > p {
+    margin: 2rem;
+  }
+  
+  footer i {
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  @media (max-width: 30.625em) {
+    .projects {
+      padding: 6rem 1rem;
+    }
+    .project-grid {  grid-template-columns: 1fr;
+    }
+  }
+
+/* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
+/* 1200px / 16px = 75em */
+@media (max-width: 28.75em) {
+    .projects h2 {
+      font-size: 4rem;
+    }
+  }
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
