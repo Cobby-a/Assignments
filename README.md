@@ -8,4 +8,3 @@ Which is my frontend assignment during week 3 session
 ## Authors
 
 - [@AduBoat1](https://twitter.com/AduBoat1)
-
